@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f0ef;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+header {
+    color: white;
+    padding: 0.5%;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: black;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 2% 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.item {
+    display: inline;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+
+.services {
+    padding: 5%;
+    background: white;
+    margin: 3% auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 5%;
+    text-align: center;
+}
+
+.service {
+    background: #fff;
+    padding: 3%;
+    border-radius: 8px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin-top: 5%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    }
+}

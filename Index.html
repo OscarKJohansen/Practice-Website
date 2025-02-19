@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no"> <!-- Dette referer til hvilket språk siden er i -->
+<head> <!-- Her ligger alt av metadataen til siden, metada er informasjon om siden ikke innhold -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Kvalø Johansen</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link-element kobler en ekstern css fil til html filen. Det er bedre å bruke ekstern css enn inline siden det er mer ryddig -->
+</head>
+<body> <!-- body er hvor alt av innhold på nettsiden ligger. Her har jeg lenker og bilder og tekst -->
+    <header> <!-- Header er der hvor alt av navigasjon og navnet mitt er. Her er der hvor man navigerer seg til de ulike sidene. -->
+        <div class="container"> <!-- Her bruker jeg div class="container" for å gi den en class som jeg kan redigere på senere i css filen min". Mens div er en divider -->
+            <div class="header-content">
+                <h1>Oscar Kvalø Johansen</h1> <!-- h1 blir brukt til å skrive store overskrifter -->
+                <nav> <!-- nav blir brukt til å definere lenker som er i et dokument. Du kan se at jeg har flere lenker til de forskjellige undersidene.-->
+                    <ul class="menu">
+                        <li class="item"><a href="about.html" class="link">Om Meg</a></li> <!-- Dette er en lenke som refererer til about.hml samt gir den en class kalt link og item -->
+                        <li class="item"><a href="tjenester.html" class="link">Tjenester</a></li>
+                        <li class="item"><a href="contact.html" class="link">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main> <!-- Jeg kalte denne main siden det er der alt av hoved tingene i nettsiden altså det som er mellom header og footer -->
+        <section class="section">
+            <div class="container">
+                <h2>Velkommen</h2>
+                <p>Hei! Jeg er en fotograf som tar bilder over hele verden. Se hvilken dag jeg er ledig så kan jeg hjelpe deg med alt du trenger. Jeg tar bilder over hele drammen sammen med min gode venn Bentley altså katten min. Vi to har vunnet flere priser sammen og på tjenester kan du se noen av bildene vi har tatt og redigert sammen.</p> <!-- Dette er et p element som er det vanlige å bruke til å skrive paragrafer. Det står for paragraph -->
+            </div>
+            <div class="calendar-container">
+                <h2>Kalender</h2>
+                <div class="calendar">
+                    <div>1</div> <div>2</div> <div class="rød">3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div>
+                    <div>8</div> <div class="rød">9</div> <div>10</div> <div class="rød">11</div> <div class="rød">12</div> <div>13</div> <div>14</div>
+                    <div>15</div> <div>16</div> <div>17</div> <div class="rød">18</div> <div>19</div> <div>20</div> <div class="rød">21</div>
+                    <div class="rød">22</div> <div>23</div> <div class="rød">24</div> <div>25</div> <div>26</div> <div class="rød">27</div> <div>28</div>
+                    <div>29</div> <div>30</div>
+                    <!-- her må jeg bruke masse divs for å bestemme posisjonen til hver eneste tall sånn at kalenderen ser bra ut. Jeg gir også enkelte divs klasser så jeg kan gjøre de røde. -->
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Laget av Oscar Kvalø Johansen mine rettigheter.</p>
+        </div>
+    </footer>
+</body>
+</html> <!-- Dette er closing tag til html koden som sier til VSC at dette er et html dokument så safari for eksempel kan lese det på riktig måte -->

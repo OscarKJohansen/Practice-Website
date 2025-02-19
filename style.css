@@ -1,0 +1,175 @@
+
+body /* Dette refererer til body og sier noe om hvordan selve siden skal se ut som background color og font størrelser */
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f0ef;
+}
+
+/* nedover her ligger flere av classene som jeg ga navn til i html siden min. Her skriver jeg hvordan de skal se ut og om de skal være sentrert eller ikke. */
+/* Her definerer jeg også flexbox. display: flex; som gjør at siden ser bra ut uansett hvor stor eller liten fanen er. Jeg bruker også prosent for å sørge for at siden forandrer seg basert på størrelsen av browseren */
+.container {
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+header {
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: black;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 2% 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.item {
+    display: inline;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+.link:hover /* :hover elementet er brukt for å definere hva som skal skje når musepekeren går over link elementet */
+{
+    text-decoration: underline;
+}
+
+
+.about-content /* Plasserer tekst og bilde side om side med mellomrom og flexbox for tilpasning. */
+{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.about-text  /* Setter bredden til 50 %. */
+{
+    width: 50%;
+   
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-image img /* Fyller containeren og gir avrundede hjørner. */
+{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.services-grid /* Lager et rutenett med mellomrom og sentrert tekst. */
+{
+    display: grid;
+    gap: 5%;
+    text-align: center;
+}
+
+.service img  /*Fyller containeren, har avrundede hjørner og en svak skygge. */
+{
+    width: 100%;
+    height: 75%;
+    border-radius: 5%;
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
+}
+
+.service h3 /* Gir litt plass over overskriften. */
+{
+    margin-top: 5%;
+}
+
+
+.section /* Legger til padding, bakgrunnsfarge, avrundede kanter og en svak skygge. */
+{
+    padding: 3% 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin-bottom: 3%;
+    border-radius: 1%;
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    
+}
+
+
+
+.calendar-container /* Styler beholderen til kalenderen med sentrert tekst, hvit bakgrunn, rundede kanter, en svak skygge, og sørger for at den ikke blir for bred. */
+{
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+  
+  .calendar /* Lager et slags rutenett med 7 like kolonner altså en for hver uke dag og gir plass mellom rutene. */
+  {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .calendar div /*  Hver celle i kalenderen er kvadratisk, har en kant rundt seg, og innholdet i cellen er sentrert både vertikalt og horisontalt. */
+  {
+    aspect-ratio: 1;
+    position: relative;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calendar div:hover /* endrer bakgrunnsfargen til lyseblå og endrer musen til en sånn hånd når du går over den. Sånn hånd som kommer hver gang du prøver å trykke på noe. */
+  {
+    background: lightblue;
+    cursor: pointer;
+  }
+  
+  .rød {
+    background-color: red;
+    color: white; /* gjør teksten lesbar */
+}
+
+
+  
